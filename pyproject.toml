@@ -38,6 +38,10 @@ dependencies = [
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lib*"]
+
 [project.optional-dependencies]
 cpu = [
   "torch<=2.5",
